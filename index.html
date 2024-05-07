@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ink/3.1.10/js/ink-all.min.js"
+    integrity="sha512-CHZL1gBdFmnOOikz2FsOFEJpqdo/lItoaw6QzhfBP9vDbRgJjC1/dDDxzRVip7aFjRXcKWs+n4n5L/4Yw5b2HQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a class="active" href="#home"><img src="hbl_logo.png" alt="Logo" style="width:42px;height:42px;"></a>
+    <a class=" topnav_left" href="#news">MIS</a>
+    <div class="topnav-right">
+      <a href="#search">🔍</a>
+      <a href="#messages">✉️</a>
+      <a href="#notifications">🔔</a>
+      <a href="#logout" class="logout-btn">Logout</a>
+    </div>
+  </div>
+
+  <div class="body-container">
+    <div class="sidebar">
+      <ul>
+        <li>
+          <label for="report-format">Report Format:</label>
+          <div class="radio-group">
+            <input type="radio" id="excel" name="report-format" value="excel">
+            <label for="excel">Excel</label>
+            <input type="radio" id="pdf" name="report-format" value="pdf">
+            <label for="pdf">PDF</label>
+            <input type="radio" id="csv" name="report-format" value="csv">
+            <label for="csv">CSV</label>
+          </div>
+        </li>
+        <li>
+          <label for="report-size-compression">Report Size Compression:</label>
+          <div class="radio-group">
+            <input type="radio" id="yes-compression" name="report-size-compression" value="yes">
+            <label for="yes-compression">Yes</label>
+            <input type="radio" id="no-compression" name="report-size-compression" value="no">
+            <label for="no-compression">No</label>
+          </div>
+        </li>
+        <li>
+          <label for="email-integration">Email Integration:</label>
+          <div class="radio-group">
+            <input type="radio" id="yes-email" name="email-integration" value="yes">
+            <label for="yes-email">Yes</label>
+            <input type="radio" id="no-email" name="email-integration" value="no">
+            <label for="no-email">No</label>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <h1>Welcome to HBL MIS</h1>
+      <form>
+        <label for="from-date">From Date:</label>
+        <input type="date" id="from-date" name="from-date">
+        <br><br>
+        <label for="to-date">To Date:</label>
+        <input type="date" id="to-date" name="to-date">
+        <br><br>
+
+        <br><br>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>
